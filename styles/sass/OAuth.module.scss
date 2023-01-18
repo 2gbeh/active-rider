@@ -1,0 +1,43 @@
+.o-auth {
+  text-align: center;
+
+  .divider {
+    margin: 30px 0;
+    border-top: 1px solid #eee;
+    position: relative;
+
+    span {
+      background-color: #fff;
+      border-radius: 100%;
+      display: inline-block;
+      padding: 5px 10px;
+      position: absolute;
+      top: -18px;
+    }
+  }
+
+  .links {
+    li {
+      display: inline-block;
+      list-style-type: none;
+      margin: 0 5px;
+
+      a {
+        border-radius: 100%;
+        color: #777;
+        padding: 10px 8px 7px;
+
+        &:hover {
+          background-color: #eee;
+        }
+
+        i {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  /* ****************************************************** */
+  @media only screen and (max-width: 640px) {}
+}

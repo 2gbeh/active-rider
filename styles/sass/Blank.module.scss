@@ -1,0 +1,44 @@
+@use 'colors';
+
+$footer-rotate: -1deg;
+$footer-no-rotate: 0deg;
+
+.blank {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+
+  footer {
+    background-color: colors.$light;
+    bottom: 0;
+    min-height: 75px;
+    position: fixed;
+    width: 100%;
+    z-index: -2;
+
+    transform: rotate($footer-rotate);
+    transform: rotate($footer-rotate);
+    -webkit-transform: rotate($footer-rotate);
+    -o-transform: rotate($footer-rotate);
+    -moz-transform: rotate($footer-rotate);
+
+    &:last-child {
+      background-color: colors.$main;
+      min-height: 25px;
+      z-index: -1;
+
+      transform: rotate($footer-no-rotate);
+      transform: rotate($footer-no-rotate);
+      -webkit-transform: rotate($footer-no-rotate);
+      -o-transform: rotate($footer-no-rotate);
+      -moz-transform: rotate($footer-no-rotate);
+    }
+  }
+
+  /* ****************************************************** */
+  @media only screen and (max-width: 640px) {
+    footer {
+      display: none;
+    }
+  }
+}
